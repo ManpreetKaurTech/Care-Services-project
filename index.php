@@ -14,8 +14,11 @@
                             <p class="fs-5 text-white mb-4 pb-2">
                                 At Nanny Care Medical Hospital, we deliver compassionate, high-quality care to ensure your well-being and comfort.
                             </p>
-                            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Learn More</a>
-                            <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book Appointment</a>
+                            <button onclick="scrollToSection('Packages')" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
+							Our Packages
+							</button>
+
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -32,8 +35,8 @@
                             <p class="fs-5 text-white mb-4 pb-2">
                                 Our team of doctors, nurses, and specialists are here to provide personalized, round-the-clock medical care.
                             </p>
-                            <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">About Us</a>
-                            <a href="#" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contact Now</a>
+                            <a href="<?php echo esc_url( home_url( '/about-us' ) ); ?>" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">About Us</a>
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contact Now</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +114,7 @@
 					<div class="col-sm-6"><p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>
 					Trained Nurses</p></div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="#">Read More</a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="<?php echo esc_url( home_url( '/services' ) ); ?>">Read More</a>
             </div>
         </div>
     </div>
@@ -133,7 +136,7 @@
 
                     <!-- Department 1 -->
                     <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                        <a class="position-relative d-block overflow-hidden" href="#">
+                        <a class="position-relative d-block overflow-hidden" href="<?php echo esc_url( home_url( '/contact' ) ); ?>">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new2.jpg" alt="Emergency Department">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                 <h5 class="m-0">Emergency Care</h5>
@@ -144,7 +147,7 @@
 
                     <!-- Department 2 -->
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                        <a class="position-relative d-block overflow-hidden" href="#">
+                        <a class="position-relative d-block overflow-hidden" href="<?php echo esc_url( home_url( '/contact' ) ); ?>">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new3.jpg" alt="Pediatrics">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                 <h5 class="m-0">Pediatrics</h5>
@@ -155,7 +158,7 @@
 
                     <!-- Department 3 -->
                     <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                        <a class="position-relative d-block overflow-hidden" href="#">
+                        <a class="position-relative d-block overflow-hidden" href="<?php echo esc_url( home_url( '/contact' ) ); ?>">
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new4.jpg" alt="Cardiology">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                 <h5 class="m-0">Cardiology</h5>
@@ -169,7 +172,7 @@
 
             <!-- Right Column -->
             <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                <a class="position-relative d-block h-100 overflow-hidden" href="#">
+                <a class="position-relative d-block h-100 overflow-hidden" href="<?php echo esc_url( home_url( '/contact' ) ); ?>">
                     <img class="img-fluid position-absolute w-100 h-100" src="<?php echo get_template_directory_uri(); ?>/assets/img/new5.jpg" alt="Neurology" style="object-fit: cover;">
                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                         <h5 class="m-0">Neurology</h5>
@@ -184,10 +187,10 @@
 <!-- Departments End -->
 
 <!-- Services Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl py-5 " id="Packages">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Our Services</h6>
+            <h6 class="section-title bg-white text-center text-primary px-3">Our Packages</h6>
             <h1 class="mb-5">Quality Medical Care for Every Need</h1>
         </div>
         <div class="row g-4 justify-content-center">
@@ -198,8 +201,8 @@
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new6.jpg" alt="Emergency Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -238,8 +241,8 @@
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new8.jpg" alt="Maternity Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                           <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -276,8 +279,8 @@
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new7.jpg" alt="Diagnostics">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                             <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -291,8 +294,10 @@
                             <small>(85)</small>
                         </div>
                         <h5 class="mb-4">Advanced laboratory and imaging services for accurate diagnosis and treatment planning.</h5>
+						<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Best suited for individuals who require ongoing assistance with daily living activities due to chronic illness or disability.</p>
                     </div>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Best suited for individuals who require ongoing assistance with daily living activities due to chronic illness or disability.</p>
+					
+					
 
 
                     <!--<div class="d-flex border-top">
@@ -427,5 +432,11 @@
     </div>
 </div>
 <!-- Testimonials End -->
-
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
 <?php get_footer(); ?>

@@ -80,7 +80,6 @@ add_action('customize_preview_init', 'mytheme_customize_preview_js');
 
 /******** end preview code  ******************************************/
 
-add_filter( 'jpeg_quality', function( $arg ) { return 100; } );
-add_filter( 'jpeg_quality', function() { return 100; } );
+;
 
 ?>

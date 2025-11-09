@@ -17,7 +17,7 @@ get_header();
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
 							<li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            
                             <li class="breadcrumb-item text-white active" aria-current="page">About</li>
                         </ol>
                     </nav>
@@ -30,10 +30,10 @@ get_header();
     </div>
     <!-- Header End -->
 <!-- Services Start -->
-<div class="container-xxl py-5">
+<div class="container-xxl py-5 ">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Our Services</h6>
+            <h6 class="section-title bg-white text-center text-primary px-3">Our Packages</h6>
             <h1 class="mb-5">Quality Medical Care for Every Need</h1>
         </div>
         <div class="row g-4 justify-content-center">
@@ -44,8 +44,8 @@ get_header();
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new6.jpg" alt="Emergency Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -84,8 +84,8 @@ get_header();
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new8.jpg" alt="Maternity Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                           <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -122,8 +122,8 @@ get_header();
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new7.jpg" alt="Diagnostics">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                            <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                             <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
@@ -137,8 +137,10 @@ get_header();
                             <small>(85)</small>
                         </div>
                         <h5 class="mb-4">Advanced laboratory and imaging services for accurate diagnosis and treatment planning.</h5>
+						<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Best suited for individuals who require ongoing assistance with daily living activities due to chronic illness or disability.</p>
                     </div>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Best suited for individuals who require ongoing assistance with daily living activities due to chronic illness or disability.</p>
+					
+					
 
 
                     <!--<div class="d-flex border-top">

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 	 <meta charset="utf-8">
-    <title>Diamond Care Services</title>
+    <title><?php echo get_bloginfo('name'); ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,29 +42,31 @@
     <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
+    <!-- Navbar Start  <i class="fa fa-solid fa-gem me-3"></i>-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">Diamond Care Services</h2>
+            <h2 class="m-0 text-primary">
+			<?php
+			$icon_url = get_site_icon_url();
+
+			if ( ! empty( $icon_url ) ) {
+				// If WordPress site icon exists
+				echo '<img src="' . esc_url( $icon_url ) . '" width="30" height="30" alt="Site Icon">';
+			} else {
+				// Fallback static image
+				echo '<img src="' . get_template_directory_uri() . '/assets/img/gem-regular-full-_1_.png" width="40" height="40" alt="Gem Icon">';
+			}
+			?>
+
+			<!--<i class="fa fa-solid fa-gem me-3"></i>-->
+			<?php echo get_bloginfo('name'); ?>
+			</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <!--<a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="courses.html" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>-->
-				
 				<?php
 				wp_nav_menu( array(
 					'theme_location'  => 'primary_menu',
@@ -77,7 +79,7 @@
 				?>
 
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <!--<a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>-->
         </div>
     </nav>
     <!-- Navbar End -->
