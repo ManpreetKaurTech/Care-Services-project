@@ -43,3 +43,59 @@ widgets code here
 		<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
 		<a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
 	</div>
+	
+	
+Additional CSS ( )
+	
+	/* ===== Hero Owl Carousel (Header) ===== */
+
+.header-carousel {
+  width: 100%;
+  position: relative;
+}
+
+.header-carousel .owl-carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  min-height: 500px; /* ensures proper size on smaller screens */
+  overflow: hidden;
+}
+
+/* Make image fill the entire slide area */
+.header-carousel .owl-carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image fills without stretching */
+  display: block;
+}
+
+/* Overlay (dark transparent layer + text area) */
+.header-carousel .owl-carousel-item .position-absolute {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .header-carousel .owl-carousel-item {
+    height: 70vh; /* smaller height on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-carousel .owl-carousel-item {
+    height: 60vh; /* smaller height on phones */
+  }
+
+  .header-carousel .owl-carousel-item h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .header-carousel .owl-carousel-item p {
+    font-size: 0.95rem;
+  }
+}
