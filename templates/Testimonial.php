@@ -38,19 +38,27 @@ get_header();
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Aman Sharma</h5>
-                <p>Recovered Patient</p>
+               <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/download.jpeg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0"><?php echo the_field('name_1'); ?></h5>
+                <p><?php echo the_field('patientd_1'); ?></p>
                 <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">“The doctors were so caring and professional. Nanny Care truly lives up to its name!”</p>
+                    <p class="mb-0"><?php echo the_field('comment_1'); ?></p>
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                <h5 class="mb-0">Priya Verma</h5>
-                <p>Mother of Patient</p>
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/download.png" style="width: 80px; height: 80px;">
+                <h5 class="mb-0"><?php echo the_field('name_2'); ?></h5>
+                <p><?php echo the_field('patientd_2'); ?></p>
                 <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">“Very clean environment and supportive staff. Highly recommended!”</p>
+                    <p class="mb-0"><?php echo the_field('comment_2'); ?></p>
+                </div>
+            </div>
+             <div class="testimonial-item text-center">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/images-3.jpeg" style="width: 80px; height: 80px;">
+                <h5 class="mb-0"><?php echo the_field('name_3'); ?></h5>
+                <p><?php echo the_field('patientd_3'); ?></p>
+                <div class="testimonial-text bg-light text-center p-4">
+                    <p class="mb-0"><?php echo the_field('comment_3'); ?></p>
                 </div>
             </div>
         </div>

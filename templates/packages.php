@@ -29,7 +29,7 @@ get_header();
         </div>
     </div>
     <!-- Header End -->
-<!-- Services Start -->
+<!-- Packages Start -->
 <div class="container-xxl py-5 ">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -38,18 +38,17 @@ get_header();
         </div>
         <div class="row g-4 justify-content-center">
 
-            <!-- Service 1 -->
+            <!-- Packages 1 -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="course-item bg-light">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new6.jpg" alt="Emergency Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                            <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
                             <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0"> STAY-IN CAREGIVER </h3>
+                        <h3 class="mb-0"> <?php echo the_field('packages_name_p1'); ?></h3>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -58,38 +57,30 @@ get_header();
                             <small class="fa fa-star text-primary"></small>
                             <small>(98)</small>
                         </div>
-                        <h5 class="mb-4">Stay-in Caregiver usual package on a monthly basis.</h5>
+                        <h5 class="mb-4"><?php echo the_field('sub_title__p1'); ?></h5>
                     </div>
 					<div class="px-4 pb-4">
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>5 days a week (Monday – Friday)</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>6 days Stay-in-Caregiver usual packages on a monthly basis.</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>5 days a week (Monday – Friday)</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>6 days a week (Monday – Saturday)</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>7 days a week (Monday – Sunday with RELEVIER) a week (Monday – Saturday)</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>7 days a week (Monday – Sunday with RELEVIER)</p>
-					</div>
-
-                   <!-- <div class="d-flex border-top">
-						
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-md text-primary me-2"></i>Dr. Neha Gupta</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>24 Hours</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-hospital text-primary me-2"></i>Emergency Ward</small>
-                    </div>-->
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_1_p1'); ?></p>
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_2__p1'); ?></p>
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_3__p1'); ?></p>
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_4__p1'); ?></p>
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_5__p1'); ?></p>
+					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_6__p1'); ?></p>
+					</div> 
                 </div>
             </div>
 
-            <!-- Service 2 -->
+            <!-- Packages 2 -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="course-item bg-light">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new8.jpg" alt="Maternity Care">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                           <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
                             <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0"> STAY-OUT CAREGIVER </h3>
+                        <h3 class="mb-0"> <?php echo the_field('packages_name__p2'); ?> </h3>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -98,36 +89,30 @@ get_header();
                             <small class="fa fa-star text-primary"></small>
                             <small>(120)</small>
                         </div>
-                        <h5 class="mb-4">Stay-out Caregiver usually paid by hour.</h5>
+                        <h5 class="mb-4"><?php echo the_field('sub_title__p2'); ?></h5>
                     </div>
 					
-					<div class="px-4 pb-4">
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>8 to 10 hours per day</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Monday – Friday</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Monday – Saturday</p>
-					<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Monday – Sunday</p>
-					
+                        <div class="px-4 pb-4">
+                        <p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_1__p2'); ?></p>
+                        <p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_2__p2'); ?></p>
+                        <p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_3__p2'); ?></p>
+                        <p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_4__p2'); ?></p>
 					</div>
-                    <!--<div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-md text-primary me-2"></i>Dr. Priya Mehta</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>8 AM - 8 PM</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-hospital text-primary me-2"></i>Maternity Ward</small>
-                    </div>-->
+                    
                 </div>
             </div>
 
-            <!-- Service 3 -->
+            <!-- Packages 3 -->
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="course-item bg-light">
                     <div class="position-relative overflow-hidden">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/new7.jpg" alt="Diagnostics">
                         <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                             <!--<a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>-->
                             <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px;">Book Now</a>
                         </div>
                     </div>
                     <div class="text-center p-4 pb-0">
-                        <h3 class="mb-0">LONG TERM</h3>
+                        <h3 class="mb-0"><?php echo the_field('packages_name__p3'); ?></h3>
                         <div class="mb-3">
                             <small class="fa fa-star text-primary"></small>
                             <small class="fa fa-star text-primary"></small>
@@ -136,17 +121,10 @@ get_header();
                             <small class="fa fa-star text-primary"></small>
                             <small>(85)</small>
                         </div>
-                        <h5 class="mb-4">Advanced laboratory and imaging services for accurate diagnosis and treatment planning.</h5>
-						<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i>Best suited for individuals who require ongoing assistance with daily living activities due to chronic illness or disability.</p>
+                        <h5 class="mb-4"><?php echo the_field('sub_title__p3'); ?></h5>
+						<p class="mb-1"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo the_field('sub_point_1__p3'); ?></p>
                     </div>
 					
-					
-
-
-                    <!--<div class="d-flex border-top">
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-md text-primary me-2"></i>Dr. Robin Singh</small>
-                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>9 AM - 9 PM</small>
-                        <small class="flex-fill text-center py-2"><i class="fa fa-hospital text-primary me-2"></i>Lab Department</small>-->
                     </div>
                 </div>
 				
@@ -158,5 +136,5 @@ get_header();
         </div>
     </div>
 </div>
-<!-- Services End -->
+<!-- Packages End -->
 <?php get_footer(); ?>
