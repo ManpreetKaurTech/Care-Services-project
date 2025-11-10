@@ -80,6 +80,8 @@ add_action('customize_preview_init', 'mytheme_customize_preview_js');
 
 /******** end preview code  ******************************************/
 
-;
+//news latter
+
+//news latter end 
 
 ?>

@@ -42,22 +42,22 @@
                     <h4 class="text-white mb-3">Gallery</h4>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new6.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new7.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new6.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-2.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new9.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-3.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new10.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/course-1.jpg" alt="">
+                            <img class="img-fluid bg-light p-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/new8.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,10 @@
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-						
+						<div class="container my-5 text-center">
+                       
+                    </div>
+
 					
 
                     </div>
