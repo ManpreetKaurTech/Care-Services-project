@@ -38,7 +38,12 @@ get_header();
         </div>
         <div class="owl-carousel testimonial-carousel position-relative">
             <div class="testimonial-item text-center">
-               <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/download.jpeg" style="width: 80px; height: 80px;">
+                    <?php
+                    $image_1= get_field('image_1'); 
+                    $image_2= get_field('image_2'); 
+                    $image_3= get_field('image_3'); 
+                    ?>
+               <img class="border rounded-circle p-2 mx-auto mb-3" src="<?php echo $image_1['url'];?>" style="width: 80px; height: 80px;">
                 <h5 class="mb-0"><?php echo the_field('name_1'); ?></h5>
                 <p><?php echo the_field('patientd_1'); ?></p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -46,7 +51,7 @@ get_header();
                 </div>
             </div>
             <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/download.png" style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="<?php echo $image_2['url'];?>" style="width: 80px; height: 80px;">
                 <h5 class="mb-0"><?php echo the_field('name_2'); ?></h5>
                 <p><?php echo the_field('patientd_2'); ?></p>
                 <div class="testimonial-text bg-light text-center p-4">
@@ -54,7 +59,7 @@ get_header();
                 </div>
             </div>
              <div class="testimonial-item text-center">
-                <img class="border rounded-circle p-2 mx-auto mb-3" src="http://localhost/Diamond-Care-Services/wp-content/uploads/2025/11/images-3.jpeg" style="width: 80px; height: 80px;">
+                <img class="border rounded-circle p-2 mx-auto mb-3" src="<?php echo $image_3['url'];?>" style="width: 80px; height: 80px;">
                 <h5 class="mb-0"><?php echo the_field('name_3'); ?></h5>
                 <p><?php echo the_field('patientd_3'); ?></p>
                 <div class="testimonial-text bg-light text-center p-4">
